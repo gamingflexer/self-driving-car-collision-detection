@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+Screenshot 2022-10-25 at 10.00.49 AM.png
+python/Tensorflow/models/ssd_mobilenet_v2_320x320_coco17_tpu-8/mscoco_label_map.pbtxt
+python/Tensorflow/models/ssd_mobilenet_v2_320x320_coco17_tpu-8/pipeline.config
+python/Tensorflow/models/ssd_mobilenet_v2_320x320_coco17_tpu-8/checkpoint/checkpoint
+python/Tensorflow/models/ssd_mobilenet_v2_320x320_coco17_tpu-8/checkpoint/ckpt-0.data-00000-of-00001
+python/Tensorflow/models/ssd_mobilenet_v2_320x320_coco17_tpu-8/checkpoint/ckpt-0.index
+python/Tensorflow/models/ssd_mobilenet_v2_320x320_coco17_tpu-8/saved_model/saved_model.pb
+python/Tensorflow/models/ssd_mobilenet_v2_320x320_coco17_tpu-8/saved_model/variables/variables.data-00000-of-00001
+python/Tensorflow/models/ssd_mobilenet_v2_320x320_coco17_tpu-8/saved_model/variables/variables.index
