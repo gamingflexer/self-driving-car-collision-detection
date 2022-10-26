@@ -84,7 +84,7 @@ def detect_fn(image):
 category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS,
                                                                     use_display_name=True)
 
-
+'''
 cap = cv2.VideoCapture(0)
 
 
@@ -130,3 +130,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+'''
