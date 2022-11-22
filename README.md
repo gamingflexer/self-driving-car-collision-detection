@@ -1,8 +1,6 @@
 # F1 Car Collision & Nearby Object Detection
 
-<img src="https://img.shields.io/static/v1?label=RasbeeryPie&message=4&color=PURPLE"/>
-<img src="https://img.shields.io/static/v1?label=FormulaBharat&message=2023&color=PURPLE"/>
-<img src="https://img.shields.io/static/v1?label=FormulaImperial&message=2023&color=PURPLE"/>
+<img src="https://img.shields.io/static/v1?label=RasbeeryPie&message=4&color=PURPLE"/> <img src="https://img.shields.io/static/v1?label=FormulaBharat&message=2023&color=PURPLE"/> <img src="https://img.shields.io/static/v1?label=FormulaImperial&message=2023&color=PURPLE"/>
 
 
 ## Introduction
@@ -36,4 +34,4 @@ We will be specifyly updating this section soon for raspberry pi setup and code.
 
 # Collaborators
 
-- [SPARK RACING TEAM](www.sparkracingteam.com)
+- Spark Racing Team - www.sparkracingteam.com
