@@ -1,5 +1,5 @@
 import cv2
-from scipy.misc import face
+# from scipy.misc import face
 from constants import *
 import numpy as np
 from PIL import Image
@@ -35,8 +35,7 @@ def FocalLength(measured_distance, real_width, width_in_rf_image):
     :param3 Width_In_Image(int): It is object width in the frame /image in our case in the reference image(found by Face detector)
     :retrun Focal_Length(Float):
     """
-    focal_length = (width_in_rf_image * measured_distance) / real_width
-    return focal_length
+    return (width_in_rf_image * measured_distance) / real_width
 
 
 # distance estimation function
@@ -52,8 +51,7 @@ def Distance_finder(Focal_Length, real_face_width, face_width_in_frame):
     :return Distance(float) : distance Estimated
 
     """
-    distance = (real_face_width * Focal_Length) / face_width_in_frame
-    return distance
+    return (real_face_width * Focal_Length) / face_width_in_frame
 
 
 # face detection Fauction
@@ -128,7 +126,7 @@ def face_data(image, CallOut, Distance_level):
 
 
 # reading reference image from directory
-ref_image = cv2.imread("../Screenshot 2022-10-25 at 10.00.49 AM.png")
+ref_image = cv2.imread("../om.png")
 
 ref_image_face_width, _, _, _ = face_data(ref_image, False, Distance_level)
 #ref_image_face_width = 30
