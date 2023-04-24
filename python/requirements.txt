@@ -1,0 +1,8 @@
+tensorflow-object-detection-api
+tensorflow
+numpy
+cvlib
+opencv-python
+pillow
+tensorflow-metal
+tensorflow-macos
