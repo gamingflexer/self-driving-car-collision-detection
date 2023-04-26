@@ -35,8 +35,6 @@ p2 = GPIO.PWM(en2,1000)
 p1.start(0)
 p2.start(0)
 
-
-
 """MOTOR CODE"""
 
 
@@ -87,8 +85,7 @@ print("Focal length of the camera",Focal_length_found)
 
 while True:
     _, frame = cap_left.read()
-    # calling face_data function
-    # Distance_leve =0
+    print("\n Left Camera Started \n")
     
     coordinates = yolo_object_detection(frame)
     face_width_in_frame, Faces, FC_X, FC_Y = face_data(frame, True, Distance_level)
@@ -103,7 +100,7 @@ while True:
                 Focal_length_found, Known_width, face_width_in_frame
             )
             Distance = round(Distance, 2)
-            # Drwaing Text on the screen
+            # Drawing Text on the screen
             Distance_level = int(Distance)
 
             cv2.putText(
@@ -121,6 +118,7 @@ while True:
             p1.ChangeDutyCycle(75)
             x = 'z'
             motor_started_left = True
+            print("----------------------left motor started----------------------")
             
         if motor_started_left:
             GPIO.output(in1,GPIO.LOW)
@@ -143,8 +141,7 @@ if DEBUG:
 
     while True:
         _, frame = cap_right.read()
-        # calling face_data function
-        # Distance_leve =0
+        print("\n Right Camera Started \n") 
         
         coordinates = yolo_object_detection(frame)
         face_width_in_frame, Faces, FC_X, FC_Y = face_data(frame, True, Distance_level)
@@ -161,7 +158,7 @@ if DEBUG:
                     Focal_length_found, Known_width, face_width_in_frame
                 )
                 Distance = round(Distance, 2)
-                # Drwaing Text on the screen
+                # Drawing Text on the screen
                 Distance_level = int(Distance)
 
                 cv2.putText(
@@ -178,6 +175,7 @@ if DEBUG:
                 p2.ChangeDutyCycle(75)
                 x = 'z'
                 motor_started_right = True
+                print("----------------------right motor started----------------------")
                 
             if motor_started_right:
                 GPIO.output(in1,GPIO.LOW)
@@ -196,8 +194,7 @@ if DEBUG:
         
     while True:
         _, frame = cap_back.read()
-        # calling face_data function
-        # Distance_leve =0
+        print("\n Back Camera Started\n")
         
         coordinates = yolo_object_detection(frame)
         face_width_in_frame, Faces, FC_X, FC_Y = face_data(frame, True, Distance_level)
@@ -214,7 +211,7 @@ if DEBUG:
                     Focal_length_found, Known_width, face_width_in_frame
                 )
                 Distance = round(Distance, 2)
-                # Drwaing Text on the screen
+                # Drawing Text on the screen
                 Distance_level = int(Distance)
 
                 cv2.putText(
@@ -235,6 +232,7 @@ if DEBUG:
                 p2.ChangeDutyCycle(75)
                 x = 'z'
                 motor_started_back = True
+                print("----------------------Back motor started----------------------")
                 
             if motor_started_back:
                 #stop the motor
@@ -255,5 +253,4 @@ if DEBUG:
     cap_back.release()
 
 cap_left.release()
-# out.release()
 cv2.destroyAllWindows()
